@@ -1,0 +1,16 @@
+<script>
+	function dec2bin(n) {
+		let res="";
+		let r=0;
+		while(n!=0) {
+			r = n%2;
+			n = Math.floor(n/2);
+			res = r + res;
+		}
+		return res;
+	}
+
+	document.write(dec2bin(23));
+
+
+</script> 
