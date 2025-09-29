@@ -1,0 +1,17 @@
+<script>
+	function funcion_manejadora()
+	{	
+		let caja = document.getElementById("caja");
+		alert("Hola " + caja.value);
+		caja.value = "";
+	}
+</script>
+
+
+	<!-- COMENTARIO -->
+	<label>Escribe tu nombre: </label>
+	<br>
+	<input id="caja" type="text" required>
+	<br>
+	<button onclick="funcion_manejadora()">Saludar!</button><br>
+

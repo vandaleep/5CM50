@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <script>
+		function limpia() {
+			document.getElementById("op1").value="";
+			document.getElementById("op2").value="";
+			document.getElementById("res").value="";
+		}
+		function suma() {
+			let op1 = document.getElementById("op1");
+			let op2 = document.getElementById("op2");
+			
+			let res = parseInt(op1.value) + parseInt(op2.value);
+			
+			document.getElementById("res").value = res;
+		}
+    
+    </script>
+  </head>
+  <body>
+    <table>
+		<tr>
+			<td>Operando1</td>
+			<td>&nbsp;</td>
+			<td>Operando2</td>
+			<td>&nbsp;</td>
+			<td>Resultado</td>
+		</tr>
+		<tr>
+			<td><input id="op1"></td>
+			<td>+</td>
+			<td><input id="op2"></td>
+			<td>=</td>
+			<td><input id="res"></td>
+		</tr>
+    </table>
+    <table>
+		<tr>
+			<td><input type="button" value="Limpiar" onclick="limpia()"></td>
+			<td><input type="button" value="Sumar" onclick="suma()"></td>
+		</tr>
+    </table>
+  </body>
+</html>
